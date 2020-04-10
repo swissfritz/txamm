@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="second"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Regeln</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <br>
+  <h5>Bitte Öffnungszeiten beachten!</h5><br><br>
+  <ion-list>
+    <ion-button expand="block" color="dark" (click)="opnLeuchten()">Armaturenbrett</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnAbst()">Auto abstellen</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnBruch()">Einbruch</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnRauch()">Rauchverbot</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnUnfall()">Unfall</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnTanken()">Tanken</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnSaug()">Wagenpflege</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnZusatz()">Zusatzeinbauten</ion-button>
+  </ion-list>
+</ion-content>

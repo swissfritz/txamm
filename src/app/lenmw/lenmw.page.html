@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Regeln</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <img src="assets/img/regeln.png" /><br><br>
+  <ion-list>
+    <ion-button expand="block" color="dark" (click)="opnLeuchten()">Armaturenbrett</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnBusse()">Bußgelder</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnBruch()">Einbruch</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnRauch()">Rauchverbot</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnUnfall()">Unfall</ion-button>
+    <ion-button expand="block" color="dark" (click)="opnZusatz()">Zusatzeinbauten</ion-button>
+  </ion-list>
+</ion-content>

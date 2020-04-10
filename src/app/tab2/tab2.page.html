@@ -1,0 +1,70 @@
+<ion-split-pane contentId="second-content" [disabled]="!paneEnabled">
+  <ion-menu contentId="second-content" menuId="second">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Taxi</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" menu="second">
+          <ion-item routerLink="/tabs/tab2/starttx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Startseite
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/akttx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Aktuelles
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/infotx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Informationen
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/call0tx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Geöffnet / Anrufen
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/buchen0" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Taxi buchen
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/twtx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Tanken
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/lentx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Regeln
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/pannetx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Panne
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/unfmtx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Unfall
+            </ion-label>
+          </ion-item>
+          <ion-item routerLink="/tabs/tab2/anftx" routerDirection="root" routerLinkActive="active-item">
+            <ion-label>
+              Anfahrt
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="second-content"></ion-router-outlet>
+</ion-split-pane>
